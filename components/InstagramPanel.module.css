@@ -1,0 +1,130 @@
+.section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 194, 203, 0.02) 50%, transparent 100%);
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 280px 1fr 280px;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.cardTitle {
+  font-family: var(--font-title);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Stats card */
+.statsCard { padding: 24px; }
+
+.statsList { display: flex; flex-direction: column; gap: 0; }
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.statRow:last-child { border-bottom: none; }
+
+.statLabel { font-size: 13px; color: var(--text-muted); }
+.statValue { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+
+/* Gauge card */
+.gaugeCard { padding: 24px; }
+
+.gaugeWrap { text-align: center; }
+.gaugeSvg { width: 100%; max-width: 260px; }
+.gaugeLabel { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
+.engagBenchmarks { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+
+.benchmark {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.benchDot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.benchmark strong { color: var(--text-primary); }
+
+.gapBadge {
+  margin-top: 16px;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--amber);
+  text-align: center;
+}
+.gapBadge strong { font-size: 15px; }
+
+/* Top content */
+.topCard { padding: 24px; }
+
+.topList { display: flex; flex-direction: column; gap: 14px; }
+
+.topItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-left: 12px;
+  border-left: 3px solid;
+}
+
+.topEmoji { font-size: 20px; flex-shrink: 0; }
+.topFormat { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 3px; }
+.topTema { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+
+/* Improvements */
+.improvSection { }
+
+.improvTitle {
+  font-family: var(--font-title);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.improvGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.improvCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+}
+
+.improvIcon { font-size: 24px; flex-shrink: 0; }
+
+.improvContent { }
+.improvName { font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.improvDesc { font-size: 13px; color: var(--text-muted); line-height: 1.4; }
+
+@media (max-width: 960px) {
+  .mainGrid { grid-template-columns: 1fr; }
+  .improvGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .improvGrid { grid-template-columns: 1fr; }
+}

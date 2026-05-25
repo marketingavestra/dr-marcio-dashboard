@@ -1,0 +1,99 @@
+.section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(59, 130, 246, 0.02) 50%, transparent 100%);
+}
+
+.header { margin-bottom: 40px; }
+
+.phasesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.phaseCard {
+  padding: 24px;
+  border-top: 3px solid var(--phase-color, var(--teal));
+}
+
+.phaseHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.phaseNum {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.phaseTitle {
+  font-family: var(--font-title);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.phasePeriod {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.phasePct {
+  font-family: var(--font-title);
+  font-size: 22px;
+  font-weight: 900;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.phaseProgress {
+  margin-bottom: 20px;
+}
+
+.phaseCount {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  display: block;
+}
+
+.phaseItems { display: flex; flex-direction: column; gap: 8px; }
+
+.phaseItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.phaseItemIcon {
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+  width: 16px;
+}
+
+.phaseItemText {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media (max-width: 960px) {
+  .phasesGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .phasesGrid { grid-template-columns: 1fr; }
+}
