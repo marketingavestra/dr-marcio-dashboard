@@ -8,19 +8,8 @@ export default function Hero() {
       <div className={styles.gridOverlay} aria-hidden="true" />
 
       <div className={`container ${styles.inner}`}>
-        {/* Avestra tag */}
-        <div className={styles.avestratag}>
-          <span className={styles.avestradot} />
-          Gerenciado pela <strong>Avestra</strong>
-        </div>
-
         <div className={styles.content}>
           <div className={styles.left}>
-            <div className={styles.statusBadge}>
-              <span className={styles.pulseDot} />
-              🟢 Projeto Ativo — Iniciado em 13 de Maio de 2026
-            </div>
-
             <h1 className={styles.name}>Dr. Márcio Rabello</h1>
             <p className={styles.title}>Médico Especialista em Emagrecimento</p>
 

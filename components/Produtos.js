@@ -7,7 +7,7 @@ const products = [
     name: 'Acompanhamento para Emagrecimento',
     category: 'Consulta Médica',
     desc: 'Consultas e acompanhamento médico personalizado baseado em evidências científicas. Para quem quer emagrecer com saúde e resultado sustentável.',
-    price: 'A definir',
+    price: 'R$ 520,00',
     status: 'Ativo',
     statusColor: 'var(--green)',
     features: [
